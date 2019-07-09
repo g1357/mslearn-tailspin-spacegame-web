@@ -36,7 +36,7 @@ steps:
     projects: '**/*.csproj'
 
 - task: SonarCloudPrepare@1
-  displayName: 'Prepare SonarCloud analysis. Build Reason: $(Build.Reason), Target Branch: $(System.PullRequest.TargetBracnch)'
+  displayName: 'Prepare SonarCloud analysis. Build Reason: $(Build.Reason), Target Branch: $(System.PullRequest.TargetBranch)'
   inputs:
     SonarCloud: 'SonarCloud connection 1'
     organization: '$(organization)'
